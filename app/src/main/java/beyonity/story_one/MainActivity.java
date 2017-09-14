@@ -27,16 +27,16 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
+                  //  mTextMessage.setText(R.string.title_home);
                     return true;
                 case R.id.navigation_explorer:
-                    mTextMessage.setText(R.string.title_explore);
+                 //   mTextMessage.setText(R.string.title_explore);
                     return true;
                 case R.id.navigation_acc:
-                    mTextMessage.setText(R.string.title_acc);
+                //    mTextMessage.setText(R.string.title_acc);
                     return true;
                 case R.id.navigation_writer:
-                    mTextMessage.setText(R.string.title_writer);
+               //     mTextMessage.setText(R.string.title_writer);
                     return true;
             }
             return false;
