@@ -26,7 +26,7 @@
     <color name="deep_purple_300">#9575CD</color>
     <color name="deep_purple_400">#7E57C2</color>
     <color name="deep_purple_500">#673AB7</color>
-    <color name="deep_purple_600">#5E35B1</color>
+    <color name="deep_purple_600">#5e35b1</color>
     <color name="deep_purple_700">#512DA8</color>
     <color name="deep_purple_800">#4527A0</color>
     <color name="deep_purple_900">#311B92</color>
@@ -73,7 +73,7 @@
     <color name="yellow_500">#FFEB3B</color>
     <color name="yellow_600">#FDD835</color>
     <color name="yellow_700">#FBC02D</color>
-    <color name="yellow_800">#F9A825</color>
+    <color name="yellow_800">#f9a825</color>
     <color name="yellow_900">#F57F17</color>
     <color name="yellow_A100">#FFFF8D</color>
     <color name="yellow_A200">#FFFF00</color>
@@ -158,7 +158,7 @@
     <color name="light_green_400">#9CCC65</color>
     <color name="light_green_500">#8BC34A</color>
     <color name="light_green_600">#7CB342</color>
-    <color name="light_green_700">#689F38</color>
+    <color name="light_green_700">#689f38</color>
     <color name="light_green_800">#558B2F</color>
     <color name="light_green_900">#33691E</color>
     <color name="light_green_A100">#CCFF90</color>
