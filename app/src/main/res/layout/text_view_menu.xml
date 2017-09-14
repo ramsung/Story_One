@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/format" />
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="4"
+        android:progress="1"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/format_color_text" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@null"
+            app:srcCompat="@color/blue_grey_600"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@null"
+            app:srcCompat="@color/red_800"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@null"
+            app:srcCompat="@color/brown_600"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <ImageButton
+            android:id="@+id/imageButton13"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@null"
+            app:srcCompat="@color/black"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+</LinearLayout>
