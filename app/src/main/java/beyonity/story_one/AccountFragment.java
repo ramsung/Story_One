@@ -4,9 +4,18 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import beyonity.story_one.adapter.StoryAdapter;
+import beyonity.story_one.models.stories;
 
 
 /**
@@ -22,6 +31,9 @@ public class AccountFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    RecyclerView storyRecyclerView;
+    StoryAdapter adapter;
+    List<stories> storylist;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -64,7 +76,32 @@ public class AccountFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_account, container, false);
+        View view = inflater.inflate(R.layout.profile_view,container,false);
+
+        storyRecyclerView = (RecyclerView) view.findViewById(R.id.storyrecyclerview);
+        storylist = new ArrayList<>();
+        adapter = new StoryAdapter(storylist,getContext());
+        RecyclerView.LayoutManager gridLayout = new GridLayoutManager(getContext(),2);
+        storyRecyclerView.setLayoutManager(gridLayout);
+
+        storyRecyclerView.setAdapter(adapter);
+
+        stories story1 = new stories("Title1","Fiction","100","5");
+        stories story2 = new stories("Title2","Romance","250","100");
+        stories story3 = new stories("Title3","Action","1001","50");
+        stories story4 = new stories("Title4","Adventure","3085","150");
+        stories story5 = new stories("Title5","Comedy","950","20");
+
+        storylist.add(story1);
+        storylist.add(story2);
+        storylist.add(story3);
+        storylist.add(story4);
+        storylist.add(story5);
+
+
+        adapter.notifyDataSetChanged();
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
