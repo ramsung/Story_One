@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +17,8 @@ import java.util.List;
 
 import beyonity.story_one.adapter.StoryAdapter;
 import beyonity.story_one.models.stories;
+
+import static android.widget.LinearLayout.HORIZONTAL;
 
 
 /**
@@ -81,8 +84,8 @@ public class AccountFragment extends Fragment {
         storyRecyclerView = (RecyclerView) view.findViewById(R.id.storyrecyclerview);
         storylist = new ArrayList<>();
         adapter = new StoryAdapter(storylist,getContext());
-        RecyclerView.LayoutManager gridLayout = new GridLayoutManager(getContext(),2);
-        storyRecyclerView.setLayoutManager(gridLayout);
+        RecyclerView.LayoutManager linearLayout = new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL, false);
+        storyRecyclerView.setLayoutManager(linearLayout);
 
         storyRecyclerView.setAdapter(adapter);
 

@@ -102,20 +102,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
+
+                    android:layout_marginTop="3dp"
                     android:fontFamily="@font/cabin_medium"
-                    android:text="TITLE"
+                    android:text="About"
                     android:textColor="#fff"
-                    android:textSize="16dp" />
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="15dp"/>
 
                 <TextView
                     android:id="@+id/status"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
-                    android:background="#00000000"
+                    android:paddingLeft="15dp"
                     android:fontFamily="@font/cabin_medium"
                     android:hint="Including first-hand experiences as a journalist the credibility in my genres of Crime Fiction and Thrillers."
                     android:textAlignment="textStart"
@@ -252,11 +253,17 @@
             android:textStyle="bold" />
 
         <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/storyrecyclerview">
+            android:id="@+id/storyrecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:reverseLayout="true">
 
         </android.support.v7.widget.RecyclerView>
+
+
 
     </LinearLayout>
 
