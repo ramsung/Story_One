@@ -13,7 +13,7 @@
         <ImageView
             android:id="@+id/image"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             android:alpha="0.8"
             android:scaleType="fitXY"
             android:src="@drawable/bg" />
@@ -29,7 +29,7 @@
     android:orientation="vertical"
     android:layout_gravity="center">
             <com.alexzh.circleimageview.CircleImageView
-                android:id="@+id/banar1"
+                android:id="@+id/profpic"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
@@ -40,7 +40,6 @@
                 app:view_borderWidth="2dp"
                 app:view_shadowDx="2dp"
                 app:view_shadowDy="0dp"
-
                 app:view_shadowRadius="2dp" />
 
 
@@ -225,21 +224,157 @@
             </LinearLayout>
 
         </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="0.001dp"
-        android:background="@color/grey_900"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_900" />
 
-    <LinearLayout
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/cabin_medium"
+                android:text="Stories Written"
+                android:textColor="@color/blue_grey_800"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="10dp"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="fill_parent"
+                                android:layout_height="100dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/adele" />
+
+                            <TextView
+                                android:id="@+id/Book_Tiltle"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:fontFamily="@font/cabin_medium"
+                                android:padding="3dp"
+                                android:text="The Title of the Story goes here"
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                android:textStyle="bold|italic" />
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.001dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/grey_900" />
+
+                            <TextView
+                                android:id="@+id/category"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/cabin_medium"
+                                android:text="Biography"
+                                android:textColor="@color/amber_900"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.001dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/grey_900" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:id="@+id/imageButton14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    app:srcCompat="@drawable/heart" />
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/cabin_medium"
+                                    android:text="2.5k"
+                                    android:textSize="12sp" />
+
+                                <View
+                                    android:id="@+id/view"
+                                    android:layout_width="0.001dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/grey_900" />
+
+                                <ImageButton
+                                    android:id="@+id/imageButton15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    app:srcCompat="@drawable/heart_broken" />
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/cabin_medium"
+                                    android:text="2.5k"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 
 </LinearLayout>
 
