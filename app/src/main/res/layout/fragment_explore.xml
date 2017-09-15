@@ -1,13 +1,139 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="beyonity.story_one.ExploreFragment">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/imageButton1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/pink_400"
+                android:fontFamily="@font/cabin_medium"
+                android:scaleType="centerCrop"
+                android:text="fantasy"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/blue_grey_400"
+                android:fontFamily="@font/cabin_medium"
+                android:scaleType="centerCrop"
+                android:text="ROMANCE"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/imageButton7"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/deep_purple_600"
+                android:fontFamily="@font/cabin_medium"
+                android:scaleType="centerCrop"
+                android:text="Adventure"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/cyan_700"
+                android:fontFamily="@font/cabin_medium"
+                android:scaleType="centerCrop"
+                android:text="sci-fi"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/imageButton5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/orange_300"
+                android:fontFamily="@font/cabin_medium"
+                android:scaleType="centerCrop"
+                android:text="kids"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/imageButton4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/black"
+                android:fontFamily="@font/cabin_medium"
+                android:scaleType="centerCrop"
+                android:text="Thriller"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/brown_400"
+                android:fontFamily="@font/cabin_medium"
+                android:scaleType="centerCrop"
+                android:text="mystery"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/imageButton8"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/light_green_700"
+                android:fontFamily="@font/cabin_medium"
+                android:scaleType="centerCrop"
+                android:text="Travel"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/imageButton6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/red_800"
+                android:fontFamily="@font/cabin_medium"
+                android:scaleType="centerCrop"
+                android:text="paranormal"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/imageButton9"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/yellow_800"
+                android:fontFamily="@font/cabin_medium"
+                android:scaleType="centerCrop"
+                android:text="Biography"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
