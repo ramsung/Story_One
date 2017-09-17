@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">Story_One</string>
+    <string name="app_name">Story Lover</string>
     <string name="title_home">Home</string>
     <string name="title_explore">Explore</string>
     <string name="title_acc">Account</string>
     <string name="title_writer">Write</string>
+    <string name="settings">Settings</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

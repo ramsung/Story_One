@@ -2,82 +2,90 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="10dp"
-    android:layout_margin="10dp">
+    android:layout_margin="3dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp">
+
     <LinearLayout
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="100dp"
+            android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/adele" />
 
-        <TextView
-            android:id="@+id/Book_Tiltle"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:fontFamily="@font/cabin_medium"
-            android:padding="3dp"
-            android:text="The Title of the Story goes here"
-            android:textAllCaps="true"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold|italic" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.001dp"
-            android:layout_marginTop="3dp"
-            android:background="@color/grey_900" />
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/Book_Tiltle"
             android:orientation="horizontal">
-            <ImageButton
-                android:id="@+id/imageButton14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@null"
-                app:srcCompat="@drawable/heart" />
+
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="16dp"
-                android:layout_gravity="center"
+                android:id="@+id/Book_Tiltle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_alignParentStart="true"
                 android:layout_weight="1"
                 android:fontFamily="@font/cabin_medium"
-                android:text="2.5k"
-                android:textSize="12sp" />
-            <View
-                android:id="@+id/view"
-                android:layout_width="0.001dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@color/grey_900" />
-            <ImageButton
-                android:id="@+id/imageButton15"
+                android:padding="3dp"
+                android:text="The Title of the Story goes here, when it is a longer title i just wanna check whether it is expading or not"
+                android:textAllCaps="false"
+                android:textColor="@color/pink_900"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@null"
-                app:srcCompat="@drawable/heart_broken" />
+                android:adjustViewBounds="true"
+                android:background="@drawable/eye"
+                android:cropToPadding="true" />
+
             <TextView
-                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
-                android:fontFamily="@font/cabin_medium"
-                android:text="2.5k"
-                android:textSize="12sp" />
+                android:text="280" />
+
+            <ImageButton
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/share" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                app:srcCompat="@drawable/tag" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+        </LinearLayout>
+
     </LinearLayout>
 </android.support.v7.widget.CardView>

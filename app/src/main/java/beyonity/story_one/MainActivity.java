@@ -52,6 +52,12 @@ public class MainActivity extends AppCompatActivity {
                         vg.setCurrentItem(3);
                     }
                     return true;
+                case R.id.settings:
+//     mTextMessage.setText(R.string.settings);
+                    if(vg!=null){
+                        vg.setCurrentItem(4);
+                    }
+                    return true;
             }
             return false;
         }
@@ -72,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new ExploreFragment(),"Explore");
         adapter.addFragment(new AccountFragment(),"Account");
         adapter.addFragment(new WriterFragment(),"Write");
+        adapter.addFragment(new SettingsFragment(),"Settings");
+
         vg.setAdapter(adapter);
         vg.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -89,8 +97,9 @@ public class MainActivity extends AppCompatActivity {
                     navigation.setSelectedItemId(R.id.navigation_acc);
                 }else if(position == 3){
                     navigation.setSelectedItemId(R.id.navigation_writer);
+                }else if(position == 4) {
+                    navigation.setSelectedItemId(R.id.settings);
                 }
-
             }
 
             @Override

@@ -23,4 +23,10 @@
         android:icon="@drawable/write"
         android:title="@string/title_writer" android:actionLayout="@layout/text_view"/>
 
+    <item
+        android:id="@+id/settings"
+        android:actionLayout="@layout/text_view"
+        android:icon="@drawable/settings"
+        android:title="@string/settings" />
+
 </menu>

@@ -31,4 +31,4 @@ dependencies {
     })
     implementation 'com.alexzh:circleimageview:1.1.2@aar'
     implementation 'com.android.support:cardview-v7:26.0.2'
-    }
+}
