@@ -17,7 +17,6 @@ import sun.bob.pooredit.R;
  * Created by bob.sun on 15/12/2.
  */
 public class Voice extends BaseContainer {
-
     private String voiceFilePath;
     private boolean empty = true;
     private MediaRecorder mediaRecorder;
