@@ -36,7 +36,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/cabin_medium"
                 android:padding="3dp"
-                android:text="The Title of the Story goes here, when it is a longer title i just wanna check whether it is expading or not"
+                android:text="The Title of the Story goes here, when it is a longer title i just wanna check "
                 android:textAllCaps="false"
                 android:textColor="@color/pink_900"
                 android:textSize="14sp"
