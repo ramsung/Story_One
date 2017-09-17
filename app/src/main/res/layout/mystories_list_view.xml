@@ -16,7 +16,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="fill_parent"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/adele" />
@@ -38,9 +38,9 @@
                 android:padding="3dp"
                 android:text="The Title of the Story goes here, when it is a longer title i just wanna check "
                 android:textAllCaps="false"
-                android:textColor="@color/pink_900"
+                android:textColor="@color/light_blue_900"
                 android:textSize="14sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="wrap_content"
