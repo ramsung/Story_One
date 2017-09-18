@@ -22,7 +22,8 @@
             <View
                 android:layout_width="5dp"
                 android:layout_height="75dp"
-                android:background="@color/colorPrimary">
+                android:background="@color/colorPrimary"
+                >
 
             </View>
 
@@ -35,7 +36,7 @@
                     android:id="@+id/Book_Title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Meeting with Adrian"
+                    android:text="The Batman"
                     android:textColor="@color/light_blue_800"
                     android:textSize="14dp"
                     android:textStyle="bold" />
