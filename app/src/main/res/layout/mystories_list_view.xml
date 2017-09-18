@@ -76,7 +76,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:layout_marginStart="5dp"
-                app:srcCompat="@drawable/tag" />
+                app:srcCompat="@drawable/tag"
+                android:layout_gravity="center"/>
 
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
