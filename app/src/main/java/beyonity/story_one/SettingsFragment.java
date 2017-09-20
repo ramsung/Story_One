@@ -109,9 +109,4 @@ public class SettingsFragment extends Fragment {
         void onFragmentInteraction(Uri uri);
     }
 
-
-    public void onClick(CardView c , View v) {
-        Intent intent = new Intent(getContext(), Tips.class);
-        startActivity(intent);
-    }
 }
