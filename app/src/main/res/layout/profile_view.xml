@@ -42,7 +42,7 @@
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/adele1" />
+            app:srcCompat="@drawable/adele" />
     </android.support.v7.widget.CardView>
 
 
