@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:background="@color/bg_login"
-              android:gravity="center"
-              android:orientation="vertical"
-              android:padding="10dp" >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/green_400"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@mipmap/ic_launcher" />
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:paddingTop="50dp"
         android:paddingLeft="20dp"
-        android:paddingRight="20dp" >
+        android:paddingRight="20dp"
+        android:paddingTop="50dp">
 
         <EditText
             android:id="@+id/email"
@@ -71,18 +72,19 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="15dp" />
+
         <TextView
+            android:id="@+id/logskip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Skip"
-            android:clickable="true"
-            android:id="@+id/logskip"
             android:layout_gravity="center"
-            android:onClick="skip"
-            android:gravity="bottom"
             android:layout_marginTop="10dp"
-            android:textColor="@color/white"
-            android:fontFamily="@font/cabin_medium"/>
+            android:clickable="true"
+            android:fontFamily="@font/cabin_medium"
+            android:gravity="bottom"
+            android:onClick="skip"
+            android:text="Skip"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
