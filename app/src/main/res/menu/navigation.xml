@@ -14,9 +14,10 @@
         android:actionLayout="@layout/text_view" />
 
     <item
-    android:id="@+id/navigation_acc"
-    android:icon="@drawable/user"
-    android:title="@string/title_acc" android:actionLayout="@layout/text_view"/>
+        android:id="@+id/navigation_acc"
+        android:icon="@drawable/user"
+        android:title="@string/title_acc"
+        android:actionLayout="@layout/text_view"/>
 
     <item
         android:id="@+id/navigation_writer"
