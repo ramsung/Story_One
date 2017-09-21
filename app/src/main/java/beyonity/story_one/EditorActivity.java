@@ -32,7 +32,7 @@ public class EditorActivity extends AppCompatActivity {
     private static final String STRIKETHROUGH = "<s>Strikethrough</s><br><br>"; // <s> or <strike> or <del>
     private static final String BULLET = "<ul><li>asdfg</li></ul>";
     private static final String QUOTE = "<blockquote>Quote</blockquote>";
-    private static final String EXAMPLE = BOLD + ITALIT + UNDERLINE + STRIKETHROUGH + BULLET + QUOTE + LINK;
+    private static final String EXAMPLE = BOLD + ITALIT + UNDERLINE + STRIKETHROUGH + BULLET + QUOTE;
 
     private KnifeText knife;
     /**
@@ -112,8 +112,8 @@ public class EditorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_editor);
 
         mVisible = true;
-        mControlsView = findViewById(R.id.fullscreen_content_controls);
-        mContentView = findViewById(R.id.fullscreen_content);
+       // mControlsView = findViewById(R.id.fullscreen_content_controls);
+       // mContentView = findViewById(R.id.fullscreen_content);
 
 
         // Set up the user interaction to manually show or hide the system UI.
@@ -139,7 +139,7 @@ public class EditorActivity extends AppCompatActivity {
         setupStrikethrough();
         setupBullet();
         setupQuote();
-        setupLink();
+        //setupLink();
         setupClear();
     }
 
