@@ -296,14 +296,14 @@ public class EditorActivity extends AppCompatActivity {
         });
     }
 
-    private void showLinkDialog() {
+   /* private void showLinkDialog() {
         final int start = knife.getSelectionStart();
         final int end = knife.getSelectionEnd();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
 
-        //View view = getLayoutInflater().inflate(R.layout.dialog_link, null, false);
+        View view = getLayoutInflater().inflate(R.layout.dialog_link, null, false);
         final EditText editText = (EditText) view.findViewById(R.id.edit);
         builder.setView(view);
         builder.setTitle(R.string.dialog_title);
@@ -329,7 +329,7 @@ public class EditorActivity extends AppCompatActivity {
         });
 
         builder.create().show();
-    }
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
