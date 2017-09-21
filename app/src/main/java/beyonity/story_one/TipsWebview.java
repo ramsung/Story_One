@@ -12,6 +12,6 @@ public class TipsWebview extends AppCompatActivity {
         setContentView(R.layout.activity_tips_webview);
         WebView wv;
         wv = (WebView) findViewById(R.id.web_crime);
-        wv.loadUrl("file:///android_assets/crime.html");
+        wv.loadUrl("https://www.google.co.in/");
     }
 }
