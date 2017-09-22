@@ -112,7 +112,7 @@
                         android:elevation="15dp"
                         android:fontFamily="@font/averia_libre_bold"
                         android:gravity="center"
-                        android:text="Paranormal"
+                        android:text="Thriller"
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold|italic" />
@@ -320,6 +320,41 @@
                         android:fontFamily="@font/averia_libre_bold"
                         android:gravity="center"
                         android:text="Crime"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/general" />
+
+                    <TextView
+                        android:id="@+id/general"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:elevation="15dp"
+                        android:fontFamily="@font/averia_libre_bold"
+                        android:gravity="center"
+                        android:text="General"
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold|italic" />

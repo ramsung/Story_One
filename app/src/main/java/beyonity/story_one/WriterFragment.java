@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.ramotion.foldingcell.FoldingCell;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -69,6 +71,7 @@ public class WriterFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_writer, container, false);
 
+
         Button wr = (Button) view.findViewById(R.id.writersample);
         wr.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +79,17 @@ public class WriterFragment extends Fragment {
                 Intent wri = new Intent(getContext(), EditorActivity.class);
                 startActivity(wri);
 
+            }
+        });
+
+        // get our folding cell
+        final FoldingCell fc = (FoldingCell) view.findViewById(R.id.folding_cell);
+
+        // attach click listener to folding cell
+        fc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fc.toggle(false);
             }
         });
         return view;

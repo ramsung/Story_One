@@ -1,102 +1,123 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
 
-    <HorizontalScrollView android:id="@+id/tools"
+    <HorizontalScrollView
+        android:id="@+id/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:scrollbars="none">
 
-        <LinearLayout android:orientation="horizontal"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
-
-            <ImageButton android:id="@+id/bold"
-                android:contentDescription="@null"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/tab"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/format_bold"
-                android:scaleType="center"
                 android:background="?android:selectableItemBackground"
+                android:onClick="tab"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/ic_keyboard_tab_black_24dp"
+                />
+            <ImageButton
+                android:id="@+id/bold"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/format_bold"
                 >
             </ImageButton>
 
-            <ImageButton android:id="@+id/italic"
-                android:contentDescription="@null"
+            <ImageButton
+                android:id="@+id/italic"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/format_italic"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
                 android:scaleType="center"
-                android:background="?android:selectableItemBackground">
+                android:src="@drawable/format_italic">
             </ImageButton>
 
-            <ImageButton android:id="@+id/underline"
-                android:contentDescription="@null"
+            <ImageButton
+                android:id="@+id/underline"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/format_underline"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
                 android:scaleType="center"
-                android:background="?android:selectableItemBackground">
+                android:src="@drawable/format_underline">
             </ImageButton>
 
-            <ImageButton android:id="@+id/strikethrough"
-                android:contentDescription="@null"
+            <ImageButton
+                android:id="@+id/strikethrough"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/format_strikethrough_variant"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
                 android:scaleType="center"
-                android:background="?android:selectableItemBackground">
+                android:src="@drawable/format_strikethrough_variant">
             </ImageButton>
 
-            <ImageButton android:id="@+id/bullet"
-                android:contentDescription="@null"
+            <ImageButton
+                android:id="@+id/bullet"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/format_list_bulleted"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
                 android:scaleType="center"
-                android:background="?android:selectableItemBackground">
+                android:src="@drawable/format_list_bulleted">
             </ImageButton>
 
-            <ImageButton android:id="@+id/quote"
-                android:contentDescription="@null"
+            <ImageButton
+                android:id="@+id/quote"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/format_quote_close"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
                 android:scaleType="center"
-                android:background="?android:selectableItemBackground">
+                android:src="@drawable/format_quote_close">
             </ImageButton>
 
 
-
-            <ImageButton android:id="@+id/clear"
-                android:contentDescription="@null"
+            <ImageButton
+                android:id="@+id/clear"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/format_clear"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
                 android:scaleType="center"
-                android:background="?android:selectableItemBackground">
+                android:src="@drawable/format_clear">
             </ImageButton>
 
-            <ImageButton android:id="@+id/undo"
-                android:contentDescription="@null"
+            <ImageButton
+                android:id="@+id/undo"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/undo"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:onClick="undo"
                 android:scaleType="center"
-                android:background="?android:selectableItemBackground">
+                android:src="@drawable/undo">
             </ImageButton>
 
-            <ImageButton android:id="@+id/redo"
-                android:contentDescription="@null"
+            <ImageButton
+                android:id="@+id/redo"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/redo"
+                android:onClick="redo"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
                 android:scaleType="center"
-                android:background="?android:selectableItemBackground">
+                android:src="@drawable/redo">
             </ImageButton>
 
         </LinearLayout>
@@ -112,11 +133,11 @@
         android:background="@android:color/transparent"
         android:fontFamily="@font/cabin_medium"
         android:gravity="top|start"
-        android:paddingEnd="16dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingStart="16dp"
-        android:paddingTop="16dp"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
         android:scrollbars="vertical"
         app:bulletColor="@color/green_400"
         app:bulletGapWidth="@dimen/bullet_gap_width"

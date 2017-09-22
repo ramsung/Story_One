@@ -34,7 +34,6 @@ public class EditorActivity extends AppCompatActivity {
 
         //Writer.fromHtml(EXAMPLE);
         Writer.setSelection(Writer.getEditableText().length());
-
         setupBold();
         setupItalic();
         setupUnderline();
@@ -206,21 +205,14 @@ public class EditorActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.undo:
-                Writer.undo();
-                break;
-            case R.id.redo:
-                Writer.redo();
-                break;
+    public void undo(View view){
+        Writer.undo();
+    }
+    public void redo(View view){
+        Writer.redo();
+    }
 
-            default:
-                break;
-        }
-
-        return true;
-    
+    public void tab(View view){
+        Writer.insertTab();
     }
 }
