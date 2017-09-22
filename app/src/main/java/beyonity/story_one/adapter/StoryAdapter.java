@@ -59,7 +59,8 @@ public class StoryAdapter extends RecyclerView.Adapter<StoryAdapter.storyFieldHo
 			storyTitle = (TextView) itemView.findViewById(R.id.Book_Tiltle);
 			category = (TextView) itemView.findViewById(R.id.category);
 			likes = (TextView) itemView.findViewById(R.id.likes);
-			dislikes = (TextView) itemView.findViewById(R.id.dislikes);
+			dislikes = (TextView) itemView.findViewById(R.id.comments);
+
 			storyCover = (ImageView) itemView.findViewById(R.id.imageView);
 
 

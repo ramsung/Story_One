@@ -83,24 +83,26 @@
 
         </FrameLayout>
             ​
+
             <FrameLayout
                 android:id="@+id/cell_title_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/blue_900">
+                android:background="@color/blue_900"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
 
 
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/averia_libre_bold"
-                        android:gravity="center"
-                        android:text="Create Story"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/averia_libre_bold"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Create Story"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </FrameLayout>
         </com.ramotion.foldingcell.FoldingCell>
