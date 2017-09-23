@@ -39,8 +39,8 @@ public class StoryAdapter extends RecyclerView.Adapter<StoryAdapter.storyFieldHo
 			stories story = storylist.get(position);
 			holder.storyTitle.setText(story.getStoryTitle());
 			holder.category.setText(story.getCategory());
-			holder.likes.setText(story.getLikes());
-			holder.dislikes.setText(story.getDislikes());
+			//holder.likes.setText(story.getLikes());
+			//holder.dislikes.setText(story.getDislikes());
 
 
 	}
@@ -58,8 +58,8 @@ public class StoryAdapter extends RecyclerView.Adapter<StoryAdapter.storyFieldHo
 			super(itemView);
 			storyTitle = (TextView) itemView.findViewById(R.id.Book_Tiltle);
 			category = (TextView) itemView.findViewById(R.id.category);
-			likes = (TextView) itemView.findViewById(R.id.likes);
-			dislikes = (TextView) itemView.findViewById(R.id.comments);
+			//likes = (TextView) itemView.findViewById(R.id.likes);
+			//dislikes = (TextView) itemView.findViewById(R.id.comments);
 
 			storyCover = (ImageView) itemView.findViewById(R.id.imageView);
 
