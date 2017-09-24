@@ -339,7 +339,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layoutManager="android.support.v7.widget.LinearLayoutManager"
-            app:reverseLayout="true">
+            app:reverseLayout="false">
 
         </android.support.v7.widget.RecyclerView>
 

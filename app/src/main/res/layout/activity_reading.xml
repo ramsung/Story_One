@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="beyonity.story_one.ReadingActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_700"
+            android:fontFamily="@font/cabin_medium"
+            android:padding="3dp"
+            android:text="Book Title"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/averia_libre_bold"
+        android:padding="5dp"
+        android:text="Chapter 1"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/share"
+            android:fontFamily="@font/cabin_medium"
+            android:text="Share"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@color/blue_700"/>
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/shape_circle_plus"
+            android:fontFamily="@font/cabin_medium"
+            android:text="Follow"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@color/blue_700"/>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/flag_triangle"
+            android:fontFamily="@font/cabin_medium"
+            android:text="Flag"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="@color/blue_700"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green_600"
+            android:fontFamily="@font/cabin_medium"
+            android:paddingBottom="2dp"
+            android:paddingStart="2dp"
+            android:paddingTop="2dp"
+            android:text="Simillar Stories"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="3dp"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:reverseLayout="false" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green_600"
+            android:fontFamily="@font/cabin_medium"
+            android:paddingBottom="2dp"
+            android:paddingStart="2dp"
+            android:paddingTop="2dp"
+            android:text="More from Author"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="3dp"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:reverseLayout="false" />
+    </LinearLayout>
+</LinearLayout>
