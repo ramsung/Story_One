@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey_800">
+    android:background="@color/white">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:gravity="center">
 
         <!--<ImageView
             android:id="@+id/image"
@@ -35,7 +36,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
-                    app:cardCornerRadius="50dp"
+                    app:cardCornerRadius="25dp"
                     app:cardElevation="10dp">
 
                     <ImageView
@@ -64,39 +65,36 @@
                         android:id="@+id/name"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:layout_weight="0.6"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
                         android:fontFamily="@font/cabin_medium"
-                        android:paddingStart="15dp"
-                        android:paddingTop="5dp"
                         android:text="Name"
-                        android:textColor="#fff"
-                        android:textSize="16dp" />
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginTop="0dp"
-                        android:layout_weight="1.3"
+                        android:layout_weight="3"
                         android:background="#00000000"
                         android:fontFamily="@font/cabin_medium"
-                        android:hint="James Bond"
                         android:inputType="text"
-                        android:paddingLeft="15dp"
-                        android:paddingRight="15dp"
-                        android:paddingTop="5dp"
                         android:text="Adele"
-                        android:textColor="#fff"
-                        android:textColorHint="#fff" android:textSize="20dp"/>
+                        android:textColor="@color/black"
+                        android:textColorHint="#fff"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.001dp"
-                    android:background="#fff"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"/>
+                    android:background="@color/black" />
 
 
                 <LinearLayout
@@ -108,25 +106,24 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="3dp"
                         android:fontFamily="@font/cabin_medium"
                         android:text="About"
-                        android:textColor="#fff"
+                        android:textColor="@color/black"
                         android:textSize="16dp"
-                        android:textStyle="bold"
-                        android:paddingLeft="15dp"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/status"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:paddingLeft="15dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="2dp"
                         android:fontFamily="@font/cabin_medium"
-                        android:hint="Including first-hand experiences as a journalist the credibility in my genres of Crime Fiction and Thrillers."
+                        android:text="Including first-hand experiences as a journalist the credibility in my genres of Crime Fiction and Thrillers."
                         android:textAlignment="textStart"
-                        android:textColor="#fff"
-                        android:textColorHint="#fff"
+                        android:textColor="@color/black"
                         android:textSize="14dp" />
 
                 </LinearLayout>
@@ -135,29 +132,29 @@
             </LinearLayout>
         </LinearLayout>
     </FrameLayout>
-
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
 
             android:layout_weight="1"
-            android:background="@drawable/custom_btn"
-            android:drawableLeft="@drawable/shape_circle_plus"
+            android:background="@color/blue_700"
+            android:drawableTop="@drawable/shape_circle_plus"
             android:fontFamily="@font/cabin_medium"
             android:gravity="center"
-            android:paddingBottom="3dp"
-            android:paddingEnd="10dp"
-            android:paddingStart="10dp"
-            android:paddingTop="3dp"
+            android:padding="3dp"
             android:text="Follow"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -166,21 +163,17 @@
 
         <TextView
             android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
 
-            android:layout_weight="1"
-            android:background="@drawable/custom_btn"
-            android:drawableLeft="@drawable/message_outline"
+            android:layout_marginTop="3dp"
+            android:background="@color/blue_700"
+            android:drawableTop="@drawable/message_outline"
             android:fontFamily="@font/cabin_medium"
             android:gravity="center"
-            android:paddingBottom="3dp"
-            android:paddingEnd="10dp"
-            android:paddingStart="10dp"
-            android:paddingTop="3dp"
+            android:padding="3dp"
             android:text="Message"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -306,28 +299,26 @@
         </LinearLayout>-->
 
     </LinearLayout>
-
-    <View
+    <view
         android:layout_width="match_parent"
-        android:layout_height="0.001dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/white" />
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
 
-            android:gravity="center"
-            android:background="@color/green_400"
+            android:background="@color/green_600"
             android:fontFamily="@font/cabin_medium"
+            android:gravity="center"
             android:text="Stories Written"
             android:textColor="@color/white"
             android:textSize="18sp"
@@ -342,7 +333,6 @@
             app:reverseLayout="false">
 
         </android.support.v7.widget.RecyclerView>
-
 
 
     </LinearLayout>
