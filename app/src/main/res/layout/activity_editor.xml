@@ -139,6 +139,7 @@
         android:paddingStart="8dp"
         android:paddingTop="8dp"
         android:scrollbars="vertical"
+        android:textColor="@color/black"
         app:bulletColor="@color/green_400"
         app:bulletGapWidth="@dimen/bullet_gap_width"
         app:bulletRadius="@dimen/bullet_radius"
