@@ -1,6 +1,6 @@
 package beyonity.story_one;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class ReadingActivity extends AppCompatActivity {

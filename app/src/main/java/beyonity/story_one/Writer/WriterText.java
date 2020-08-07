@@ -32,7 +32,6 @@ import android.text.style.URLSpan;
 import android.text.style.UnderlineSpan;
 import android.util.AttributeSet;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Toast;
 
 
 import java.util.ArrayList;
@@ -42,7 +41,7 @@ import java.util.List;
 import beyonity.story_one.R;
 
 
-public class WriterText extends android.support.v7.widget.AppCompatEditText implements TextWatcher {
+public class WriterText extends androidx.appcompat.widget.AppCompatEditText implements TextWatcher {
 	public static final int FORMAT_BOLD = 0x01;
 	public static final int FORMAT_ITALIC = 0x02;
 	public static final int FORMAT_UNDERLINED = 0x03;

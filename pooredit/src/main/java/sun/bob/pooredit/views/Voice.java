@@ -3,7 +3,7 @@ package sun.bob.pooredit.views;
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
-import android.support.design.widget.Snackbar;
+import com.google.android.material.snackbar.Snackbar;
 import android.view.View;
 import android.widget.ImageView;
 

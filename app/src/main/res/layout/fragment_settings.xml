@@ -8,7 +8,7 @@
     tools:context="beyonity.story_one.SettingsFragment">
 
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/tips_setting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,5 +52,5 @@
 
         </LinearLayout>
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>

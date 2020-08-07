@@ -79,7 +79,7 @@ public class ToolBar extends HorizontalScrollView {
         }
     }
 
-    class StyleButton extends android.support.v7.widget.AppCompatImageView{
+    class StyleButton extends androidx.appcompat.widget.AppCompatImageView{
 
         private int function;
         private boolean on = false;
